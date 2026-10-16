@@ -1,0 +1,24 @@
+[project]
+name = "jobs-es"
+version = "0.1.0"
+description = "Scraper de ofertas reales en España: hostelería con alojamiento, logística, comercio. Output: HTML filtrable."
+requires-python = ">=3.10"
+dependencies = [
+    "httpx>=0.27",
+    "selectolax>=0.4.11",
+]
+
+[project.scripts]
+jobs-es = "jobs_es.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/jobs_es"]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]

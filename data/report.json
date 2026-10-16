@@ -1,0 +1,134 @@
+{
+  "started_at": "2026-09-27T23:17:43.141057+00:00",
+  "sources": {
+    "amazon": {
+      "ok": true,
+      "listed": 286,
+      "new": 111,
+      "updated": 0,
+      "discarded": 0,
+      "detail_fetched": 0,
+      "cache_hits": 0,
+      "parse_errors": 0,
+      "http_errors": 0,
+      "warnings": [],
+      "raw": "286 de 286 totales",
+      "elapsed_ms": 3284
+    },
+    "correos": {
+      "ok": true,
+      "listed": 8,
+      "new": 8,
+      "updated": 0,
+      "discarded": 0,
+      "detail_fetched": 8,
+      "cache_hits": 0,
+      "parse_errors": 0,
+      "http_errors": 0,
+      "warnings": [],
+      "elapsed_ms": 9678
+    },
+    "dia": {
+      "ok": true,
+      "listed": 10,
+      "new": 7,
+      "updated": 0,
+      "discarded": 0,
+      "detail_fetched": 0,
+      "cache_hits": 0,
+      "parse_errors": 0,
+      "http_errors": 0,
+      "warnings": [],
+      "raw": "10 logística de 135 del feed (2 páginas)",
+      "elapsed_ms": 4101
+    },
+    "infojobs": {
+      "ok": true,
+      "listed": 0,
+      "new": 0,
+      "updated": 0,
+      "discarded": 0,
+      "detail_fetched": 0,
+      "cache_hits": 0,
+      "parse_errors": 0,
+      "http_errors": 0,
+      "warnings": [
+        "below_expected_minimum"
+      ],
+      "raw": "sin credenciales INFOJOBS_CLIENT_ID/SECRET",
+      "elapsed_ms": 0
+    },
+    "jobandtalent": {
+      "ok": true,
+      "listed": 80,
+      "new": 73,
+      "updated": 0,
+      "discarded": 0,
+      "detail_fetched": 0,
+      "cache_hits": 0,
+      "parse_errors": 0,
+      "http_errors": 0,
+      "warnings": [],
+      "raw": "80 ofertas via API (26 páginas, 9 provincias vacías)",
+      "elapsed_ms": 12565
+    },
+    "jobeka": {
+      "ok": true,
+      "listed": 118,
+      "new": 118,
+      "updated": 0,
+      "discarded": 0,
+      "detail_fetched": 118,
+      "cache_hits": 0,
+      "parse_errors": 0,
+      "http_errors": 0,
+      "warnings": [],
+      "elapsed_ms": 88962
+    },
+    "lidl": {
+      "ok": true,
+      "listed": 280,
+      "new": 274,
+      "updated": 0,
+      "discarded": 0,
+      "detail_fetched": 0,
+      "cache_hits": 0,
+      "parse_errors": 0,
+      "http_errors": 0,
+      "warnings": [],
+      "elapsed_ms": 15307
+    },
+    "mercadona": {
+      "ok": true,
+      "listed": 138,
+      "new": 138,
+      "updated": 0,
+      "discarded": 0,
+      "detail_fetched": 138,
+      "cache_hits": 0,
+      "parse_errors": 0,
+      "http_errors": 0,
+      "warnings": [],
+      "elapsed_ms": 260867
+    },
+    "randstad": {
+      "ok": true,
+      "listed": 0,
+      "new": 0,
+      "updated": 0,
+      "discarded": 0,
+      "detail_fetched": 0,
+      "cache_hits": 0,
+      "parse_errors": 0,
+      "http_errors": 0,
+      "warnings": [
+        "below_expected_minimum"
+      ],
+      "raw": "no se pudo cargar listado randstad.es",
+      "elapsed_ms": 214
+    }
+  },
+  "finished_at": "2026-09-27T23:25:30.287426+00:00",
+  "total_jobs": 669,
+  "active_jobs": 371
+}

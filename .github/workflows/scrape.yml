@@ -1,0 +1,27 @@
+name: scrape-jobs-es
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: scrape
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v4
+      - run: uv sync --locked
+      - run: uv run jobs-es
+      - name: commit HTML regenerado
+        run: |
+          git config user.name "jobs-es-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add jobs_es.html
+          git diff --cached --quiet || git commit -m "scrape $(date -u +%FT%TZ)"
+          git push

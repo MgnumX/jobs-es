@@ -1,0 +1,7 @@
+__pycache__/
+.venv/
+data/*.db
+data/cache/
+data/fetch_log.jsonl*
+*.pyc
+.pytest_cache/
