@@ -1,0 +1,4 @@
+# Los fixtures son páginas HTML públicas guardadas para tests sin red:
+# contienen slugs de hoteles y IDs de tags que disparan generic-api-key.
+[allowlist]
+paths = ['''tests/fixtures/''']
