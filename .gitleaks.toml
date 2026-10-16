@@ -1,4 +1,6 @@
 # Los fixtures son páginas HTML públicas guardadas para tests sin red:
 # contienen slugs de hoteles y IDs de tags que disparan generic-api-key.
+# Alcance: fixtures = solo capturas de páginas públicas sin autenticación;
+# cualquier fixture que requiera auth queda fuera del repo.
 [allowlist]
 paths = ['''tests/fixtures/''']
