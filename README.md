@@ -43,7 +43,7 @@ Ver `README-canales.md`, `SPEC.md` y `ARCHITECTURE_FOR_REVIEW.md`.
 
 ## Casos límite que el parser ya cubre
 
-Los tests cubren guardarraíles de salario y parsers con fixture (`turijobs`, `meliá`); el resto de los adaptadores se verifica por ejecución, no por tests unitarios.
+Los tests cubren guardarraíles de salario y parsers con fixture (`turijobs`, `meliá`); el resto de los adaptadores se verifica por ejecución, no por tests unitarios. Son 16 tests, sin red, 0 saltados.
 
 `tests/test_salary_guards.py` — regresiones reales que antes rompían el ranking de €/h:
 
