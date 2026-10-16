@@ -8,12 +8,14 @@ El scraper cubre fuentes API-friendly. Estos canales NO son scrapeables
 | Canal | Por qué |
 |---|---|
 | **JobToday** (app) | Probado como scraper y DESCARTADO (2026-08-26): el listado se lee, pero el detalle de cada oferta da 403 (WAF que fuerza la app) y sus salarios por hora vienen inflados en origen (80 €/h "ayudante"). Sigue valiendo como app manual: chat directo con reclutadores, ofertas caducan rápido. |
-| **Randstad Flex** | Turnos de logística/comercio/hostelería con contratación directa por la ETT desde la app (web con anti-bot, no scrapeable). |
+| **Randstad Flex** (app) | Turnos de logística/comercio/hostelería con contratación directa por la ETT desde la app. El listado web de randstad.es SÍ lo cubre el adaptador `randstad` del scraper; lo no scrapeable es el flujo interno de la app Flex. |
 | **Eurofirms** | Mayor ETT española, proceso 100% digital, firman contrato online y arrancas en días (bloquea bots por TLS; humanos entran normal). |
 
-## Exclusión decidida: InfoJobs (y webs de Randstad/Eurofirms)
+## Vía descartada: bypass de apps móviles (InfoJobs, Randstad Flex, Eurofirms)
 
-**Decisión 2026-08-25, presupuesto cero — NO reevaluar sin motivo nuevo:**
+**Decisión 2026-08-25, presupuesto cero — NO reevaluar sin motivo nuevo.**
+(Excluye la *vía del bypass*, no los portales: el adaptador `infojobs` usa la
+API pública oficial y `randstad` cubre el listado web.)
 
 - **Coste de incluirlos:** ingeniería inversa del cliente móvil + infraestructura
   de proxies residenciales rotativos ≈ **30–50 €/mes** y **6–8 h** de trabajo,
@@ -31,7 +33,8 @@ El scraper cubre fuentes API-friendly. Estos canales NO son scrapeables
 - **Adecco web** — redirige a un site global SPA sin API accesible; source
   desactivado (`_adecco_disabled.py`) hasta capturar el endpoint nuevo.
   Mejor entrar por la app o por oficina física.
-- **InfoJobs / LinkedIn masivo** — ver bloque anterior.
+- **Scrapeo masivo de InfoJobs / LinkedIn vía bypass** — ver bloque anterior.
+  (El adaptador `infojobs` usa la API oficial con credenciales propias.)
 
 ## Tácticas anti-oferta-fantasma (aplicadas al scraper)
 
